@@ -34,7 +34,7 @@ function App() {
   const fetchWeather = async (e) => {
     e.preventDefault();
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}&aqi=no`
     );
     updateWeather(response.data);
   };
